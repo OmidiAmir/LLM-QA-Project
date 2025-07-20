@@ -135,4 +135,50 @@ The final preprocessed dataset was saved in a .jsonl format named medquad_prepro
 
 ---
 
+## 🧪 Testing
+
+Testing is an essential part of this project to ensure correctness, maintainability, and robustness across all components—from data preprocessing to model inference and deployment.
+
+### 🎯 Objectives
+
+The test suite is designed to verify that:
+
+- Input data is correctly loaded, parsed, and cleaned
+- Processing logic behaves as expected under various edge cases
+- Output formats (e.g., JSONL) meet structural and content requirements
+- Each class and function performs reliably and is reusable
+- Any future models or API services built on top of the pipeline are testable and verifiable
+
+### 📁 Test Organization
+
+All tests are placed under the `tests/` directory, with separate files created to target individual modules such as:
+
+- Data loading and preprocessing
+- Cleaning and filtering routines
+- Saving and formatting functions
+- Future components (model training, evaluation, inference, and API)
+
+Each test file follows the naming convention `test_*.py` for automatic discovery by Python's unittest framework.
+
+### ⚙️ Testing Framework
+
+- Built using Python’s built-in `unittest` module for simplicity and reliability
+- Uses `tempfile`, mocking, and custom test fixtures for isolating file-based logic
+- Designed for easy extensibility as the codebase evolves
+
+### ▶️ How to Run Tests
+
+To run all tests in the project, execute the following from the project root:
+
+```bash
+python -m unittest discover tests
+```
+This will automatically discover and run all test cases in the tests/ directory.
+
+You may also run an individual test file like so:
+```bash
+python -m unittest tests.test_preprocessing
+```
+---
+
 ### 🔮 Future Work
