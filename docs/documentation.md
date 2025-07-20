@@ -10,11 +10,12 @@
 7. [Inference & API](#inference--api)
 8. [Deployment](#deployment)
 9. [Monitoring & Feedback Loop](#monitoring--feedback-loop)
-10. [Future Work](#future-work)
+10. [Testing](#testing)
+11. [Future Work](#future-work)
 
 ---
 
-## 📖 Project Overview
+## 📖 <h2 id = "project-overview"> Project Overview
 Briefly describe the project:
 This project develops an **end-to-end question answering (QA) system** tailored for the healthcare domain by fine-tuning a lightweight **large language model (LLM)** using the **QLoRA* method. The system enables users to input medical or health-related questions and receive accurate, context-aware answers via a deployed API interface.
 
@@ -24,7 +25,7 @@ The project uses the Phi-1.5 model, chosen for its balance of performance and ef
 
 ---
 
-## ⚙️ Environment Setup
+## ⚙️ <h2 id = "environment-setup"> Environment Setup
 
 ### 🐍 Python Version
 - Python 3.10
@@ -74,7 +75,7 @@ print(torch.cuda.get_device_name(0))    # Should return your GPU name
 ```
 ---
 
-## 📂 Dataset Preparation
+## 📂 <h2 id = "dataset-preparation"> Dataset Preparation
 
 The dataset used in this project is **MedQuAD**, a real-world, expert-annotated collection of medical question-answer (QA) pairs gathered from trusted sources such as the NIH and MedlinePlus. The data was originally stored in XML format across multiple topic-specific folders.
 
@@ -111,31 +112,31 @@ The final preprocessed dataset was saved in a .jsonl format named medquad_prepro
 
 ---
 
-### 🧠 Model Selection
+## 🧠 <h2 id = "model-selection"> Model Selection
 
 --- 
 
-### ⚙️ Training Configuration
+## ⚙️ <h2 id = "training-configuration"> Training Configuration
 
 ---
 
-### 📊 Evaluation Metrics
+## 📊 <h2 id = "evaluation-metrics"> Evaluation Metrics
 
 ---
 
-### 🧪 Inference & API
+## 🧪 <h2 id = "inference--api"> Inference & API
 
 ---
 
-### 🚀 Deployment
+## 🚀 <h2 id = "deployment"> Deployment
 
 ---
 
-### 📈 Monitoring & Feedback Loop
+## 📈  <h2 id = "monitoring--feedback-loop">Monitoring & Feedback Loop
 
 ---
 
-## 🧪 Testing
+## 🧪 <h2 id = "testing"> Testing
 
 Testing is an essential part of this project to ensure correctness, maintainability, and robustness across all components—from data preprocessing to model inference and deployment.
 
@@ -149,7 +150,7 @@ The test suite is designed to verify that:
 - Each class and function performs reliably and is reusable
 - Any future models or API services built on top of the pipeline are testable and verifiable
 
-### 📁 Test Organization
+### 📋 Test Organization
 
 All tests are placed under the `tests/` directory, with separate files created to target individual modules such as:
 
@@ -160,7 +161,7 @@ All tests are placed under the `tests/` directory, with separate files created t
 
 Each test file follows the naming convention `test_*.py` for automatic discovery by Python's unittest framework.
 
-### ⚙️ Testing Framework
+### 🧱 Testing Framework
 
 - Built using Python’s built-in `unittest` module for simplicity and reliability
 - Uses `tempfile`, mocking, and custom test fixtures for isolating file-based logic
@@ -179,6 +180,7 @@ You may also run an individual test file like so:
 ```bash
 python -m unittest tests.test_preprocessing
 ```
+
 ---
 
-### 🔮 Future Work
+### 🛤️ <h2 id = "aaaaaafuture-workaaaaaa"> Future Work
